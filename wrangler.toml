@@ -1,3 +1,10 @@
 name = "shipline-app"
 main = "src/index.js"
 compatibility_date = "2026-01-01"
+
+# Optional: persist standups in Workers KV. Without this binding the app
+# falls back to a non-persistent in-memory store.
+# Create a namespace with `npx wrangler kv namespace create ENTRIES`, then:
+# [[kv_namespaces]]
+# binding = "ENTRIES"
+# id = "<your-namespace-id>"
